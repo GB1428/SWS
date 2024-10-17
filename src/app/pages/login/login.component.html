@@ -1,0 +1,23 @@
+<ion-content>
+
+  <div>
+    <ion-item>
+      <ion-label position="floating">Usuario</ion-label>
+      <ion-input [(ngModel)]="usuario"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Clave</ion-label>
+      <ion-input [(ngModel)]="clave" type="password"></ion-input>
+    </ion-item>
+    <ion-button (click)="login(usuario, clave)">Iniciar sesión</ion-button>
+    <ion-text color="danger" *ngIf="loginFailed">
+      Usuario o clave incorrectos.
+    </ion-text>
+    <ion-item lines="none">
+      <ion-text color="medium">
+        <a routerLink="/registrar">¿No tienes cuenta? Regístrate aquí</a>
+      </ion-text>
+    </ion-item>
+  </div>
+
+</ion-content>

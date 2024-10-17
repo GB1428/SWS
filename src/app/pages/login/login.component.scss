@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+ion-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Usamos height en lugar de min-height */
+  background: #000;
+}
+
+div {
+  width: 400px;
+  background: #012C56; /* Fondo del formulario */
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
+
+ion-item {
+  --background: transparent;
+  --highlight-background: transparent;
+  margin-bottom: 20px;
+}
+
+ion-label {
+  color: #FFB800; /* Color de las etiquetas Usuario y Clave */
+  font-weight: 600;
+  position: relative;
+}
+
+ion-input {
+  --background: #333;
+  --color: #fff;
+  --placeholder-color: #FFB800; /* Color del placeholder */
+  border-radius: 4px;
+  padding: 15px;
+}
+
+ion-button {
+  --background: #FFB800; /* Color del botón Iniciar sesión */
+  color: #fff; /* Texto blanco dentro del botón */
+  font-weight: 600;
+  font-size: 1.2em;
+  letter-spacing: 0.05em;
+  width: 100%;
+  margin-top: 20px;
+}
+
+ion-button:active {
+  opacity: 0.6;
+}
+
+ion-text {
+  color: #fff;
+  margin-top: 10px;
+}
+
+ion-text a {
+  color: #FFB800; /* Mensaje de registro de color #FFB800 */
+  font-weight: 600;
+  text-decoration: none;
+}
+
+ion-text[color="danger"] {
+  color: #f00;
+}
+
+@media (max-width: 600px) {
+  div {
+    width: 90%;
+  }
+}
